@@ -11,7 +11,13 @@ h1, h2, h3 {
     color: #8b4513; /* Tom de marrom elegante que combina com o bege */
 }
 
-
+/* Estilo para as linhas divisórias */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d2b48c; /* Bege escuro / Tan */
+    margin: 20px 0;
+}
 
 /* Estilo para a lista de regras */
 ul {
