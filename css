@@ -1,0 +1,32 @@
+/* Configuração do fundo da página */
+body {
+    background-color: #f5f5dc; /* Cor Bege (Beige) */
+    font-family: Arial, sans-serif;
+    color: #333333; /* Cor do texto em cinza escuro para boa leitura */
+    margin: 20px;
+}
+
+/* Estilo para os títulos */
+h1, h2, h3 {
+    color: #8b4513; /* Tom de marrom elegante que combina com o bege */
+}
+
+/* Estilo para as linhas divisórias */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d2b48c; /* Bege escuro / Tan */
+    margin: 20px 0;
+}
+
+/* Estilo para a lista de regras */
+ul {
+    background-color: #faf0e6; /* Bege bem claro (Linen) */
+    padding: 15px 35px;
+    border-radius: 8px;
+    border-left: 4px solid #8b4513;
+}
+
+li {
+    margin-bottom: 8px;
+}
