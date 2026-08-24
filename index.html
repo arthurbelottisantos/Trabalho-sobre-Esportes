@@ -15,8 +15,9 @@
     <!-- Imagem de uma bola de basquete (link direto da internet) -->
     <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500" alt="Bola de Basquete na quadra" width="400">
 
-    <h3>o que é Basquete?</h3>
-    <p>O basquete é um esporte muito dinâmico criado em 1891. Ele ajuda muito no trabalho em equipe, e na sua saúde.
+    <h3>O que é Basquete?</h3>
+    <p>O basquete é um esporte muito dinâmico criado em 1891. Ele ajuda muito no trabalho em equipe, e na sua saúde.</p>
+    
     <h3>Regras básicas:</h3>
     <ul>
         <li>Duas equipes de 5 jogadores em quadra.</li>
@@ -24,7 +25,44 @@
         <li>Cada cesta vale 2 pontos (ou 3 pontos se for de fora da linha).</li>
     </ul>
 
+    <!-- BOTÃO 1: Botão de Curtida -->
+    <div style="margin-top: 20px;">
+        <button id="btnCurtir" onclick="curtir()" style="padding: 10px 15px; font-size: 16px; cursor: pointer;">
+            ❤️ Curtir (0)
+        </button>
+    </div>
+
+    <!-- BOTÃO 2: Mostrar / Esconder Curiosidade -->
+    <div style="margin-top: 15px;">
+        <button onclick="alternarCuriosidade()" style="padding: 10px 15px; font-size: 16px; cursor: pointer;">
+            💡 Ver Curiosidade
+        </button>
+        <p id="textoCuriosidade" style="display: none; background-color: #fff; padding: 10px; border-radius: 5px; width: 380px; margin-top: 10px;">
+            <strong>Você sabia?</strong> No primeiro jogo de basquete da história, em 1891, as cestas eram na verdade cestas de pêssego e não tinham fundo vazado. Toda vez que alguém pontuava, precisavam subir em uma escada para pegar a bola!
+        </p>
+    </div>
+
     <hr>  
+
+    <!-- Código em JavaScript responsável pela interação dos botões -->
+    <script>
+        // Função do Botão 1: Conta as curtidas
+        let curtidas = 0;
+        function curtir() {
+            curtidas++;
+            document.getElementById("btnCurtir").innerText = "❤️ Curtir (" + curtidas + ")";
+        }
+
+        // Função do Botão 2: Mostra ou esconde o texto da curiosidade
+        function alternarCuriosidade() {
+            let texto = document.getElementById("textoCuriosidade");
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+            } else {
+                texto.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
